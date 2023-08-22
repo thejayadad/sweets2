@@ -41,13 +41,13 @@ const Navbar = () => {
         <MenuItem href="/contact" text="Contact" isVisible={true} itemVariants={itemVariants} />
       </div>
       <div className="md:hidden">
-        <button style={{ zIndex: '1000' }} className="text-[40px] z-101" onClick={toggleMenu}>
-          {isMenuOpen ? <FiX /> : <FiMenu />}
+        <button style={{ zIndex: '1001' }} className="text-[40px] z-1020" onClick={toggleMenu}>
+          {isMenuOpen ? <FiX  /> : <FiMenu />}
         </button>
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="absolute top-0 left-0 w-full h-screen bg-gray-900 z-[-100]"
+              className="absolute top-30 left-0 w-full h-screen bg-gray-900"
               initial="hidden"
               animate="visible"
               exit="hidden"
